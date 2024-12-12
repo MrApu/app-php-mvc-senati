@@ -71,6 +71,16 @@ $router->add('GET','/register','AuthController','showRegister');
 $router->add('POST','/auth/login','AuthController','login');
 $router->add('POST','/auth/register','AuthController','register');
 
+//HomeController
+
+$router->add('GET','Home', 'HomeController','index');
+
+
+
+//Home
+
+$router->add('GET','productos/', 'ProductoController','index');
+$router->add('GET','productos/obtener-todo', 'ProductoController','obtenerProducto');
 
 
 
